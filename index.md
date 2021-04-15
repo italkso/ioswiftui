@@ -1,6 +1,6 @@
 ## Welcome to Italkso
 
-Read [README](README.md) first.
+Read [README](https://github.com/italkso/ioswiftui/blob/main/README.md) first.
 
 ### Swift
 
