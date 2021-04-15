@@ -16,17 +16,16 @@ struct FindView: View {
         VStack{
             HStack{
                 TextField("Search",text: $searchItem)
-                    .font(.subheadline)
+                    .font(.headline)
                     .padding()
                     .padding(.horizontal, 25)
                     .background(Color.white)
-                    .cornerRadius(30)
-                    .shadow(color: .secondary, radius: 2, x: 0.0, y: 0.0)
+                    .cornerRadius(10)
                     .overlay(
                         HStack {
                             Image(systemName: "magnifyingglass")
                                 .imageScale(.small)
-                                .foregroundColor(isSearching ?  .primary : .secondary)
+                                .foregroundColor(isSearching ?  .blue : .primary)
                                 .frame(minWidth: 0 , maxWidth: .infinity, alignment: .leading)
                                 .padding(.horizontal,10)
                      
@@ -34,7 +33,7 @@ struct FindView: View {
                                 Button(action: {
                                     self.searchItem = ""
                                 }) {
-                                    Image(systemName: "multiply")
+                                    Image(systemName: "multiply.circle.fill")
                                         .imageScale(.small)
                                         .foregroundColor(.primary)
                                         .padding(.horizontal)
@@ -42,7 +41,8 @@ struct FindView: View {
                             }
                         }
                     )
-                    .padding(.horizontal, 15)
+                    .overlay(Capsule().stroke(Color( self.isSearching ? .orange : .black)))
+                    .padding(10)
                     .onTapGesture {
                         self.isSearching = true
                     }
@@ -61,7 +61,8 @@ struct FindView: View {
                         
                     }
                     .transition(.move(edge: .trailing))
-                    .animation(.easeInOut)
+                    .animation(.easeIn)
+                    .animation(.easeOut(duration: 0.2))
                 }
             }
         }

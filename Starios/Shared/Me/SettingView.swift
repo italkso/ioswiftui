@@ -16,26 +16,34 @@ struct SettingView: View {
                 }
 
                 Section {
-                    NavigationLink("Edit Profile", destination: ProfileView())
-                    Text("General")
-                    Text("Privacy")
-                    Text("Feedback")
-                    Text("About")
-                    Text("Rate")
+                    NavigationLink("Profile", destination: ProfileView())
+                    NavigationLink("General", destination: EmptyView())
+                    NavigationLink("Privacy", destination: EmptyView())
+                    NavigationLink("Feedback", destination: EmptyView())
+                    NavigationLink("About", destination: EmptyView())
+                    NavigationLink("Rate", destination: EmptyView())
                 }
                 
                 Section {
-                    Button("Switch Account") {
+                    
+                    Button(action: {
                         // MARK: -TODO
-                    }
-                    Button("Exit") {
+                        print("Switch Account")
+
+                    }, label: {
+                        Text("Switch Account")
+                    })
+                    Button(action: {
                         // MARK: -TODO
-                    }
+                        print("Exit")
+
+                    }, label: {
+                        Text("Exit")
+                    })
                 }
             }
-            .navigationBarTitle(Text("Setting"), displayMode:.inline)
-//            .navigationBarHidden(true)
-//            .navigationBarBackButtonHidden(true)
+            .navigationBarTitle(Text("Settings"), displayMode:.inline)
+            .font(.headline)
         }
     }
 }

@@ -13,61 +13,64 @@ struct SignInView: View {
     @State private var isEditing = false
     
     var body: some View {
-        ZStack{
-            // Use Linear Gradient as background
-            LinearGradient(gradient: Gradient(colors: [.black,.orange]),
-                           startPoint: .topLeading,
-                           endPoint: .bottomTrailing
-            ).edgesIgnoringSafeArea(.all).opacity(0.1)
-            
-            // Container
-            VStack(alignment:.center, spacing: 10) {
+        NavigationView {
+            ZStack {
+                // Use Linear Gradient as background
+                LinearGradient(gradient: Gradient(colors: [.black,.orange]),
+                               startPoint: .topLeading,
+                               endPoint: .bottomTrailing
+                ).edgesIgnoringSafeArea(.all).opacity(0.1)
                 
-                Text("Welcome to Mars")
-                    .font(.system(size: 35, weight: .bold, design: .rounded))
-                    .padding()
-                
-                Spacer()
-                
-                Label("Sign up to know more about Mars", systemImage: "")
-                    .font(.body)
-                
-                TextField("Username", text: $username) .inputFieldStyle()
+                // Container
+                VStack(alignment:.center, spacing: 10) {
                     
-                SecureField("Password", text: $password)
-                    .inputFieldStyle()
-                
-                HStack{
-                    Button("") {
-                        //
+                    Text("Welcome to Mars")
+                        .font(.system(size: 35, weight: .bold, design: .rounded))
+                        .padding()
+                    
+                    Spacer()
+                    
+                    Label("Sign up to know more about Mars", systemImage: "")
+                        .font(.body)
+                    
+                    TextField("Username", text: $username) .inputFieldStyle()
+                        
+                    SecureField("Password", text: $password)
+                        .inputFieldStyle()
+                    
+                    HStack{
+                        Button("") {
+                            //
+                        }
+                        .padding(.horizontal)
+                        .overlay(
+                            Image(systemName: "circle")
+                                .imageScale(.small)
+                                .foregroundColor(.blue)
+                        )
+                        
+                        Text("Agree to")
+                            .font(.footnote)
+                        Link("User Agreement",destination:URL(string:"https://www.example.com")!).font(.footnote)
+                        
                     }
-                    .padding(.horizontal)
-                    .overlay(
-                        Image(systemName: "circle")
-                            .imageScale(.small)
-                            .foregroundColor(.blue)
-                    )
                     
-                    Text("Agree to")
-                        .font(.footnote)
-                    Link("User Agreement",destination:URL(string:"https://www.example.com")!).font(.footnote)
+                    Button("Sign Up") {
+                        print("")
+                    }
+                    .font(.headline)
+                    .padding()
+                    .foregroundColor(.white)
+                    .background(Color.blue)
+                    .clipShape(Rectangle())
+                    .cornerRadius(10)
+                    .shadow(color: .secondary, radius: 5, x: 1, y: 5)
+                    
+                    Spacer()
                     
                 }
-                
-                Button("Sign Up") {
-                    print("")
-                }
-                .font(.headline)
-                .padding()
-                .foregroundColor(.white)
-                .background(Color.blue)
-                .clipShape(Rectangle())
-                .cornerRadius(10)
-                .shadow(color: .secondary, radius: 5, x: 1, y: 5)
-                
-                Spacer()
-                
             }
+            .navigationBarBackButtonHidden(true)
         }
     }
 }

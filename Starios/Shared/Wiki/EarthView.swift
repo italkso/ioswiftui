@@ -1,5 +1,5 @@
 //
-//  MarsView.swift
+//  EarthView.swift
 //  Starios
 //
 //  Created by aaron on 2021/4/15.
@@ -7,20 +7,20 @@
 
 import SwiftUI
 
-struct MarsView: View {
-    let marsInfo = """
-    While it was wetter and warmer with a thicker atmosphere billions of years ago, now Mars is a dusty, cold, desert world with a very thin atmosphere.
+struct EarthView: View {
+    let earthInfo = """
+    Earth, our home planet, is the only place we know of so far that’s inhabited by living things. It's also the only planet in our solar system with liquid water on the surface.
     """
     
     var body: some View {
-        Text("About Mars")
+        Text("About Earth")
             .font(.system(size: 25, weight: .bold, design: .rounded))
             .padding()
             .foregroundColor(.orange)
             
         
         // Multiline Text
-        Text(marsInfo)
+        Text(earthInfo)
             .font(.system(size: 15, weight: .light, design: .serif))
             .padding()
             .lineLimit(5)
@@ -32,19 +32,18 @@ struct MarsView: View {
         
         
         //  Image Modifier
-        Image("IngenuityHelicopter")
+        Image("reindeer")
             .resizable()
             .imageScale(.small)
             .scaledToFit()
             .cornerRadius(10)
             .padding()
-        Text("Ingenuity Helicopter, credit: NASA/JPL-Caltech")
+        Text("Reindeer, Credits: Logan Berner/Northern Arizona University")
             .font(.footnote)
-    }
-}
+    }}
 
-struct MarsView_Previews: PreviewProvider {
+struct EarthView_Previews: PreviewProvider {
     static var previews: some View {
-        MarsView()
+        EarthView()
     }
 }

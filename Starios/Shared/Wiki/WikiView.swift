@@ -8,23 +8,26 @@
 import SwiftUI
 
 struct WikiView: View {
-    
+    @State private var pickerIndex = 0
+    var pickerOptions = ["Mars", "Earth"]
+
     var body: some View {
         NavigationView {
-        VStack{
-            FindView().padding()
-            // Text
-            
-            List {
-                MarsView()
-                MarsView()
-                MarsView()
-            }
-            
-            Spacer(minLength: 10)
-            
-        }
-        .navigationBarTitle(Text("Wiki"),displayMode: .inline)
+            VStack {
+                Picker("Picker", selection: $pickerIndex) {
+                    ForEach(0 ..< pickerOptions.count) { index in
+                        Text(pickerOptions[index]).tag(index)
+                    }
+                }.pickerStyle(SegmentedPickerStyle()).padding()
+                if pickerIndex == 0 {
+                    MarsView()
+                } else {
+                    EarthView()
+                }
+                
+
+                Spacer()
+            }.navigationBarTitle(Text("Wiki"), displayMode: .inline)
         }
     }
 }

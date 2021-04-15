@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9356596526282980003F156F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9356596426282980003F156F /* Extension.swift */; };
+		9356596626282980003F156F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9356596426282980003F156F /* Extension.swift */; };
+		9356597226282BF5003F156F /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9356597126282BF5003F156F /* TaskListView.swift */; };
+		9356597326282BF5003F156F /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9356597126282BF5003F156F /* TaskListView.swift */; };
+		9356598326282CAF003F156F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9356598226282CAF003F156F /* Task.swift */; };
+		9356598426282CAF003F156F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9356598226282CAF003F156F /* Task.swift */; };
+		9356599B26283673003F156F /* EarthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9356599A26283673003F156F /* EarthView.swift */; };
+		9356599C26283673003F156F /* EarthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9356599A26283673003F156F /* EarthView.swift */; };
 		9370919726247D8400134EC4 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9370919626247D8400134EC4 /* Tests_iOS.swift */; };
 		937091A226247D8400134EC4 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937091A126247D8400134EC4 /* Tests_macOS.swift */; };
 		937091A426247D8400134EC4 /* StariosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9370917B26247D8200134EC4 /* StariosApp.swift */; };
@@ -81,6 +89,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9356596426282980003F156F /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		9356597126282BF5003F156F /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		9356598226282CAF003F156F /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		9356599A26283673003F156F /* EarthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthView.swift; sourceTree = "<group>"; };
 		9370917B26247D8200134EC4 /* StariosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StariosApp.swift; sourceTree = "<group>"; };
 		9370917C26247D8200134EC4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9370917D26247D8400134EC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -152,6 +164,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9356597826282C00003F156F /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				937091D12624A01300134EC4 /* TaskView.swift */,
+				9356597126282BF5003F156F /* TaskListView.swift */,
+				93A01BB126274B5500157933 /* CountdownView.swift */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		9356597D26282C21003F156F /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				93779B442626D24900F317C3 /* CityWeatherInfoView.swift */,
+				937091BC26249EFF00134EC4 /* LocationView.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		9356598D26282CB4003F156F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9356598226282CAF003F156F /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9370917526247D8200134EC4 = {
 			isa = PBXGroup;
 			children = (
@@ -169,13 +208,14 @@
 			children = (
 				9370917B26247D8200134EC4 /* StariosApp.swift */,
 				9370917C26247D8200134EC4 /* ContentView.swift */,
-				937091BC26249EFF00134EC4 /* LocationView.swift */,
-				937091D12624A01300134EC4 /* TaskView.swift */,
-				93779B4F2626DE5B00F317C3 /* Wiki */,
-				93779B382626D0E400F317C3 /* NetworkService */,
+				9356598D26282CB4003F156F /* Model */,
 				93779B242626D06200F317C3 /* ViewModel */,
-				93E924FB26268A4C007FD256 /* ComponentView */,
+				93779B4F2626DE5B00F317C3 /* Wiki */,
+				9356597826282C00003F156F /* Task */,
+				9356597D26282C21003F156F /* Location */,
 				937091ED2625278F00134EC4 /* Me */,
+				93E924FB26268A4C007FD256 /* Component */,
+				93779B382626D0E400F317C3 /* APIs */,
 				9370917D26247D8400134EC4 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -231,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				937091E62625276000134EC4 /* MeView.swift */,
+				93A01BB92627C15400157933 /* AvatarView.swift */,
 				93E924D72626016A007FD256 /* ImagePickerView.swift */,
 				937091D82624A03800134EC4 /* SettingView.swift */,
 				937091DF26251CBB00134EC4 /* SignInView.swift */,
@@ -244,6 +285,7 @@
 		93779B242626D06200F317C3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				9356596426282980003F156F /* Extension.swift */,
 				93779B1D2626D05600F317C3 /* Weather.swift */,
 				93A01B9C262746D500157933 /* UserData.swift */,
 				93A01BA3262746FF00157933 /* TaskItem.swift */,
@@ -251,12 +293,12 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		93779B382626D0E400F317C3 /* NetworkService */ = {
+		93779B382626D0E400F317C3 /* APIs */ = {
 			isa = PBXGroup;
 			children = (
 				93779B312626D0D800F317C3 /* WeatherAPI.swift */,
 			);
-			path = NetworkService;
+			path = APIs;
 			sourceTree = "<group>";
 		};
 		93779B4F2626DE5B00F317C3 /* Wiki */ = {
@@ -264,23 +306,21 @@
 			children = (
 				937091C326249F8400134EC4 /* WikiView.swift */,
 				93A01BC02627CABF00157933 /* MarsView.swift */,
+				9356599A26283673003F156F /* EarthView.swift */,
 			);
 			path = Wiki;
 			sourceTree = "<group>";
 		};
-		93E924FB26268A4C007FD256 /* ComponentView */ = {
+		93E924FB26268A4C007FD256 /* Component */ = {
 			isa = PBXGroup;
 			children = (
 				93E924F02626056A007FD256 /* CurrentTimeView.swift */,
 				937091CA26249FD200134EC4 /* FindView.swift */,
 				93E924D02626010A007FD256 /* ImagePicker.swift */,
 				93779B162626CEAB00F317C3 /* MapView.swift */,
-				93779B442626D24900F317C3 /* CityWeatherInfoView.swift */,
 				93A01BAA2627482A00157933 /* MarkView.swift */,
-				93A01BB126274B5500157933 /* CountdownView.swift */,
-				93A01BB92627C15400157933 /* AvatarView.swift */,
 			);
-			path = ComponentView;
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,6 +482,7 @@
 			files = (
 				937091CB26249FD200134EC4 /* FindView.swift in Sources */,
 				93779B1E2626D05600F317C3 /* Weather.swift in Sources */,
+				9356599B26283673003F156F /* EarthView.swift in Sources */,
 				93779B172626CEAB00F317C3 /* MapView.swift in Sources */,
 				937091C426249F8400134EC4 /* WikiView.swift in Sources */,
 				93779B452626D24900F317C3 /* CityWeatherInfoView.swift in Sources */,
@@ -449,8 +490,10 @@
 				93E924E326260423007FD256 /* LikeView.swift in Sources */,
 				937091A626247D8400134EC4 /* ContentView.swift in Sources */,
 				93A01BB226274B5500157933 /* CountdownView.swift in Sources */,
+				9356596526282980003F156F /* Extension.swift in Sources */,
 				93E924D82626016A007FD256 /* ImagePickerView.swift in Sources */,
 				937091D92624A03800134EC4 /* SettingView.swift in Sources */,
+				9356598326282CAF003F156F /* Task.swift in Sources */,
 				93779B322626D0D800F317C3 /* WeatherAPI.swift in Sources */,
 				93E924EA26260431007FD256 /* HistoryView.swift in Sources */,
 				93A01BBA2627C15400157933 /* AvatarView.swift in Sources */,
@@ -459,6 +502,7 @@
 				937091BD26249EFF00134EC4 /* LocationView.swift in Sources */,
 				93E924D12626010B007FD256 /* ImagePicker.swift in Sources */,
 				937091E72625276000134EC4 /* MeView.swift in Sources */,
+				9356597226282BF5003F156F /* TaskListView.swift in Sources */,
 				937091E026251CBC00134EC4 /* SignInView.swift in Sources */,
 				937091A426247D8400134EC4 /* StariosApp.swift in Sources */,
 				93A01B9D262746D500157933 /* UserData.swift in Sources */,
@@ -474,6 +518,7 @@
 			files = (
 				937091CC26249FD200134EC4 /* FindView.swift in Sources */,
 				93779B1F2626D05600F317C3 /* Weather.swift in Sources */,
+				9356599C26283673003F156F /* EarthView.swift in Sources */,
 				93779B182626CEAB00F317C3 /* MapView.swift in Sources */,
 				937091C526249F8400134EC4 /* WikiView.swift in Sources */,
 				93779B462626D24900F317C3 /* CityWeatherInfoView.swift in Sources */,
@@ -481,8 +526,10 @@
 				93E924E426260423007FD256 /* LikeView.swift in Sources */,
 				937091A726247D8400134EC4 /* ContentView.swift in Sources */,
 				93A01BB326274B5500157933 /* CountdownView.swift in Sources */,
+				9356596626282980003F156F /* Extension.swift in Sources */,
 				93E924D92626016A007FD256 /* ImagePickerView.swift in Sources */,
 				937091DA2624A03800134EC4 /* SettingView.swift in Sources */,
+				9356598426282CAF003F156F /* Task.swift in Sources */,
 				93779B332626D0D800F317C3 /* WeatherAPI.swift in Sources */,
 				93E924EB26260431007FD256 /* HistoryView.swift in Sources */,
 				93A01BBB2627C15400157933 /* AvatarView.swift in Sources */,
@@ -491,6 +538,7 @@
 				937091BE26249EFF00134EC4 /* LocationView.swift in Sources */,
 				93E924D22626010B007FD256 /* ImagePicker.swift in Sources */,
 				937091E82625276000134EC4 /* MeView.swift in Sources */,
+				9356597326282BF5003F156F /* TaskListView.swift in Sources */,
 				937091E126251CBC00134EC4 /* SignInView.swift in Sources */,
 				937091A526247D8400134EC4 /* StariosApp.swift in Sources */,
 				93A01B9E262746D500157933 /* UserData.swift in Sources */,
