@@ -12,55 +12,46 @@ struct ContentView: View {
 
     var body: some View {
         TabView(selection: $selection) {
-            FindView()
-                .font(.title)
-                .tabItem {
-                    VStack {
-                        Image(systemName: "magnifyingglass.circle")
-                        Text("Find")
-                    }
-                }
-                .tag(0)
-
             WikiView()
                 .font(.title)
                 .tabItem {
                     VStack {
-                        Image(systemName: "lifepreserver")
+                        Image(systemName: "lifepreserver.fill")
                         Text("Wiki")
                     }
                 }
-                .tag(1)
-
-            LocationView()
-                .font(.title)
-                .tabItem {
-                    VStack {
-                        Image(systemName: "mappin.and.ellipse")
-                        Text("Location")
-                    }
-                }
-                .tag(2)
+                .tag(0)
 
             TaskView()
                 .font(.title)
                 .tabItem {
                     VStack {
-                        Image(systemName: "checkmark.seal")
+                        Image(systemName: "checkmark.seal.fill")
                         Text("Task")
                     }
                 }
-                .tag(3)
-
-            SettingView()
+                .tag(1)
+            
+            LocationView()
                 .font(.title)
                 .tabItem {
                     VStack {
-                        Image(systemName: "person.circle")
+                        Image(systemName: "mappin.and.ellipse")
+                            .animation(.default)
+                        Text("Location")
+                    }
+                }
+                .tag(2)
+
+            MeView()
+                .font(.title)
+                .tabItem {
+                    VStack {
+                        Image(systemName: "person.circle.fill")
                         Text("Me")
                     }
                 }
-                .tag(4)
+                .tag(3)
         }
     }
 }

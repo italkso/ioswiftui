@@ -25,6 +25,42 @@
 		937091D32624A01300134EC4 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937091D12624A01300134EC4 /* TaskView.swift */; };
 		937091D92624A03800134EC4 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937091D82624A03800134EC4 /* SettingView.swift */; };
 		937091DA2624A03800134EC4 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937091D82624A03800134EC4 /* SettingView.swift */; };
+		937091E026251CBC00134EC4 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937091DF26251CBB00134EC4 /* SignInView.swift */; };
+		937091E126251CBC00134EC4 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937091DF26251CBB00134EC4 /* SignInView.swift */; };
+		937091E72625276000134EC4 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937091E62625276000134EC4 /* MeView.swift */; };
+		937091E82625276000134EC4 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937091E62625276000134EC4 /* MeView.swift */; };
+		93779B172626CEAB00F317C3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93779B162626CEAB00F317C3 /* MapView.swift */; };
+		93779B182626CEAB00F317C3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93779B162626CEAB00F317C3 /* MapView.swift */; };
+		93779B1E2626D05600F317C3 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93779B1D2626D05600F317C3 /* Weather.swift */; };
+		93779B1F2626D05600F317C3 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93779B1D2626D05600F317C3 /* Weather.swift */; };
+		93779B322626D0D800F317C3 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93779B312626D0D800F317C3 /* WeatherAPI.swift */; };
+		93779B332626D0D800F317C3 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93779B312626D0D800F317C3 /* WeatherAPI.swift */; };
+		93779B452626D24900F317C3 /* CityWeatherInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93779B442626D24900F317C3 /* CityWeatherInfoView.swift */; };
+		93779B462626D24900F317C3 /* CityWeatherInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93779B442626D24900F317C3 /* CityWeatherInfoView.swift */; };
+		93A01B9D262746D500157933 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A01B9C262746D500157933 /* UserData.swift */; };
+		93A01B9E262746D500157933 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A01B9C262746D500157933 /* UserData.swift */; };
+		93A01BA4262746FF00157933 /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A01BA3262746FF00157933 /* TaskItem.swift */; };
+		93A01BA5262746FF00157933 /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A01BA3262746FF00157933 /* TaskItem.swift */; };
+		93A01BAB2627482A00157933 /* MarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A01BAA2627482A00157933 /* MarkView.swift */; };
+		93A01BAC2627482A00157933 /* MarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A01BAA2627482A00157933 /* MarkView.swift */; };
+		93A01BB226274B5500157933 /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A01BB126274B5500157933 /* CountdownView.swift */; };
+		93A01BB326274B5500157933 /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A01BB126274B5500157933 /* CountdownView.swift */; };
+		93A01BBA2627C15400157933 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A01BB92627C15400157933 /* AvatarView.swift */; };
+		93A01BBB2627C15400157933 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A01BB92627C15400157933 /* AvatarView.swift */; };
+		93A01BC12627CABF00157933 /* MarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A01BC02627CABF00157933 /* MarsView.swift */; };
+		93A01BC22627CABF00157933 /* MarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A01BC02627CABF00157933 /* MarsView.swift */; };
+		93E9242D26255F3D007FD256 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E9242C26255F3D007FD256 /* ProfileView.swift */; };
+		93E9242E26255F3D007FD256 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E9242C26255F3D007FD256 /* ProfileView.swift */; };
+		93E924D12626010B007FD256 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E924D02626010A007FD256 /* ImagePicker.swift */; };
+		93E924D22626010B007FD256 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E924D02626010A007FD256 /* ImagePicker.swift */; };
+		93E924D82626016A007FD256 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E924D72626016A007FD256 /* ImagePickerView.swift */; };
+		93E924D92626016A007FD256 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E924D72626016A007FD256 /* ImagePickerView.swift */; };
+		93E924E326260423007FD256 /* LikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E924E226260423007FD256 /* LikeView.swift */; };
+		93E924E426260423007FD256 /* LikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E924E226260423007FD256 /* LikeView.swift */; };
+		93E924EA26260431007FD256 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E924E926260431007FD256 /* HistoryView.swift */; };
+		93E924EB26260431007FD256 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E924E926260431007FD256 /* HistoryView.swift */; };
+		93E924F12626056A007FD256 /* CurrentTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E924F02626056A007FD256 /* CurrentTimeView.swift */; };
+		93E924F22626056A007FD256 /* CurrentTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E924F02626056A007FD256 /* CurrentTimeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +100,24 @@
 		937091CA26249FD200134EC4 /* FindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindView.swift; sourceTree = "<group>"; };
 		937091D12624A01300134EC4 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		937091D82624A03800134EC4 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		937091DF26251CBB00134EC4 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		937091E62625276000134EC4 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		93779B162626CEAB00F317C3 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		93779B1D2626D05600F317C3 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		93779B312626D0D800F317C3 /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
+		93779B442626D24900F317C3 /* CityWeatherInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherInfoView.swift; sourceTree = "<group>"; };
+		93A01B9C262746D500157933 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		93A01BA3262746FF00157933 /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
+		93A01BAA2627482A00157933 /* MarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkView.swift; sourceTree = "<group>"; };
+		93A01BB126274B5500157933 /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
+		93A01BB92627C15400157933 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		93A01BC02627CABF00157933 /* MarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsView.swift; sourceTree = "<group>"; };
+		93E9242C26255F3D007FD256 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		93E924D02626010A007FD256 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		93E924D72626016A007FD256 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		93E924E226260423007FD256 /* LikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeView.swift; sourceTree = "<group>"; };
+		93E924E926260431007FD256 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		93E924F02626056A007FD256 /* CurrentTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTimeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,10 +170,12 @@
 				9370917B26247D8200134EC4 /* StariosApp.swift */,
 				9370917C26247D8200134EC4 /* ContentView.swift */,
 				937091BC26249EFF00134EC4 /* LocationView.swift */,
-				937091C326249F8400134EC4 /* WikiView.swift */,
-				937091CA26249FD200134EC4 /* FindView.swift */,
 				937091D12624A01300134EC4 /* TaskView.swift */,
-				937091D82624A03800134EC4 /* SettingView.swift */,
+				93779B4F2626DE5B00F317C3 /* Wiki */,
+				93779B382626D0E400F317C3 /* NetworkService */,
+				93779B242626D06200F317C3 /* ViewModel */,
+				93E924FB26268A4C007FD256 /* ComponentView */,
+				937091ED2625278F00134EC4 /* Me */,
 				9370917D26247D8400134EC4 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -169,6 +225,62 @@
 				937091A326247D8400134EC4 /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		937091ED2625278F00134EC4 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				937091E62625276000134EC4 /* MeView.swift */,
+				93E924D72626016A007FD256 /* ImagePickerView.swift */,
+				937091D82624A03800134EC4 /* SettingView.swift */,
+				937091DF26251CBB00134EC4 /* SignInView.swift */,
+				93E9242C26255F3D007FD256 /* ProfileView.swift */,
+				93E924E226260423007FD256 /* LikeView.swift */,
+				93E924E926260431007FD256 /* HistoryView.swift */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		93779B242626D06200F317C3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				93779B1D2626D05600F317C3 /* Weather.swift */,
+				93A01B9C262746D500157933 /* UserData.swift */,
+				93A01BA3262746FF00157933 /* TaskItem.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		93779B382626D0E400F317C3 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				93779B312626D0D800F317C3 /* WeatherAPI.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		93779B4F2626DE5B00F317C3 /* Wiki */ = {
+			isa = PBXGroup;
+			children = (
+				937091C326249F8400134EC4 /* WikiView.swift */,
+				93A01BC02627CABF00157933 /* MarsView.swift */,
+			);
+			path = Wiki;
+			sourceTree = "<group>";
+		};
+		93E924FB26268A4C007FD256 /* ComponentView */ = {
+			isa = PBXGroup;
+			children = (
+				93E924F02626056A007FD256 /* CurrentTimeView.swift */,
+				937091CA26249FD200134EC4 /* FindView.swift */,
+				93E924D02626010A007FD256 /* ImagePicker.swift */,
+				93779B162626CEAB00F317C3 /* MapView.swift */,
+				93779B442626D24900F317C3 /* CityWeatherInfoView.swift */,
+				93A01BAA2627482A00157933 /* MarkView.swift */,
+				93A01BB126274B5500157933 /* CountdownView.swift */,
+				93A01BB92627C15400157933 /* AvatarView.swift */,
+			);
+			path = ComponentView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,12 +441,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				937091CB26249FD200134EC4 /* FindView.swift in Sources */,
+				93779B1E2626D05600F317C3 /* Weather.swift in Sources */,
+				93779B172626CEAB00F317C3 /* MapView.swift in Sources */,
 				937091C426249F8400134EC4 /* WikiView.swift in Sources */,
+				93779B452626D24900F317C3 /* CityWeatherInfoView.swift in Sources */,
+				93E9242D26255F3D007FD256 /* ProfileView.swift in Sources */,
+				93E924E326260423007FD256 /* LikeView.swift in Sources */,
 				937091A626247D8400134EC4 /* ContentView.swift in Sources */,
+				93A01BB226274B5500157933 /* CountdownView.swift in Sources */,
+				93E924D82626016A007FD256 /* ImagePickerView.swift in Sources */,
 				937091D92624A03800134EC4 /* SettingView.swift in Sources */,
+				93779B322626D0D800F317C3 /* WeatherAPI.swift in Sources */,
+				93E924EA26260431007FD256 /* HistoryView.swift in Sources */,
+				93A01BBA2627C15400157933 /* AvatarView.swift in Sources */,
 				937091D22624A01300134EC4 /* TaskView.swift in Sources */,
+				93A01BA4262746FF00157933 /* TaskItem.swift in Sources */,
 				937091BD26249EFF00134EC4 /* LocationView.swift in Sources */,
+				93E924D12626010B007FD256 /* ImagePicker.swift in Sources */,
+				937091E72625276000134EC4 /* MeView.swift in Sources */,
+				937091E026251CBC00134EC4 /* SignInView.swift in Sources */,
 				937091A426247D8400134EC4 /* StariosApp.swift in Sources */,
+				93A01B9D262746D500157933 /* UserData.swift in Sources */,
+				93A01BC12627CABF00157933 /* MarsView.swift in Sources */,
+				93E924F12626056A007FD256 /* CurrentTimeView.swift in Sources */,
+				93A01BAB2627482A00157933 /* MarkView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,12 +473,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				937091CC26249FD200134EC4 /* FindView.swift in Sources */,
+				93779B1F2626D05600F317C3 /* Weather.swift in Sources */,
+				93779B182626CEAB00F317C3 /* MapView.swift in Sources */,
 				937091C526249F8400134EC4 /* WikiView.swift in Sources */,
+				93779B462626D24900F317C3 /* CityWeatherInfoView.swift in Sources */,
+				93E9242E26255F3D007FD256 /* ProfileView.swift in Sources */,
+				93E924E426260423007FD256 /* LikeView.swift in Sources */,
 				937091A726247D8400134EC4 /* ContentView.swift in Sources */,
+				93A01BB326274B5500157933 /* CountdownView.swift in Sources */,
+				93E924D92626016A007FD256 /* ImagePickerView.swift in Sources */,
 				937091DA2624A03800134EC4 /* SettingView.swift in Sources */,
+				93779B332626D0D800F317C3 /* WeatherAPI.swift in Sources */,
+				93E924EB26260431007FD256 /* HistoryView.swift in Sources */,
+				93A01BBB2627C15400157933 /* AvatarView.swift in Sources */,
 				937091D32624A01300134EC4 /* TaskView.swift in Sources */,
+				93A01BA5262746FF00157933 /* TaskItem.swift in Sources */,
 				937091BE26249EFF00134EC4 /* LocationView.swift in Sources */,
+				93E924D22626010B007FD256 /* ImagePicker.swift in Sources */,
+				937091E82625276000134EC4 /* MeView.swift in Sources */,
+				937091E126251CBC00134EC4 /* SignInView.swift in Sources */,
 				937091A526247D8400134EC4 /* StariosApp.swift in Sources */,
+				93A01B9E262746D500157933 /* UserData.swift in Sources */,
+				93A01BC22627CABF00157933 /* MarsView.swift in Sources */,
+				93E924F22626056A007FD256 /* CurrentTimeView.swift in Sources */,
+				93A01BAC2627482A00157933 /* MarkView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

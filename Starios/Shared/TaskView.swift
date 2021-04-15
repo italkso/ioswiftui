@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct TaskView: View {
+    
     var body: some View {
-        Text("Task")
+        NavigationView {
+            VStack {
+                FindView().padding()
+                Text("Task List Here").padding()
+                EmptyView()
+                CountdownView().edgesIgnoringSafeArea(.all)
+            }.navigationBarTitle(Text("Task"),displayMode: .inline)
+        }
     }
 }
 
