@@ -10,5 +10,5 @@ import Combine
 
 final class UserData: ObservableObject{
     @Published var showMarkedOnly = false
-    @Published var taskItems = TaskItem.self
+    @Published var missionItems = MissionItem.self
 }

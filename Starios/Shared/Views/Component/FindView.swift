@@ -19,13 +19,11 @@ struct FindView: View {
                     .font(.headline)
                     .padding()
                     .padding(.horizontal, 25)
-                    .background(Color.white)
-                    .cornerRadius(10)
                     .overlay(
                         HStack {
                             Image(systemName: "magnifyingglass")
                                 .imageScale(.small)
-                                .foregroundColor(isSearching ?  .blue : .primary)
+                                .foregroundColor(isSearching ?  .red : .orange)
                                 .frame(minWidth: 0 , maxWidth: .infinity, alignment: .leading)
                                 .padding(.horizontal,10)
                      
@@ -35,13 +33,15 @@ struct FindView: View {
                                 }) {
                                     Image(systemName: "multiply.circle.fill")
                                         .imageScale(.small)
-                                        .foregroundColor(.primary)
+                                        .foregroundColor(.red)
                                         .padding(.horizontal)
                                 }
                             }
                         }
                     )
-                    .overlay(Capsule().stroke(Color( self.isSearching ? .orange : .black)))
+                    .overlay(
+                        Capsule().stroke(Color( self.isSearching ? .orange : .gray))
+                    )
                     .padding(10)
                     .onTapGesture {
                         self.isSearching = true
@@ -56,13 +56,12 @@ struct FindView: View {
                     }){
                         Text("Cancel")
                             .font(.subheadline)
-                            .foregroundColor(.blue)
+                            .foregroundColor(.orange)
                             .padding(.trailing,10)
                         
                     }
                     .transition(.move(edge: .trailing))
-                    .animation(.easeIn)
-                    .animation(.easeOut(duration: 0.2))
+                    .animation(.easeInOut(duration: 0.08))
                 }
             }
         }

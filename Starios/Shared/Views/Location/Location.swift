@@ -1,5 +1,5 @@
 //
-//  LocationView.swift
+//  Location.swift
 //  Starios
 //
 //  Created by aaron on 2021/4/12.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LocationView: View {
+struct Location: View {
     var weather: Weather?
     @ObservedObject var weatherAPI = WeatherAPI()
     @State private var isSearching = false
@@ -25,7 +25,7 @@ struct LocationView: View {
             
             
             // MARK: - Weather Info
-            CityWeatherInfoView(weather: weatherAPI.weather ?? Weather.all())
+            CityWeatherInfo(weather: weatherAPI.weather ?? Weather.all())
             
             TextField("Search like California", text: $weatherAPI.city, onCommit: { self.weatherAPI.getWeatherInfo(by: self.weatherAPI.city) })
                 .font(.headline)
@@ -41,8 +41,8 @@ struct LocationView: View {
     }
 }
 
-struct LocationView_Previews: PreviewProvider {
+struct Location_Previews: PreviewProvider {
     static var previews: some View {
-        LocationView()
+        Location()
     }
 }

@@ -7,58 +7,65 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct Home: View {
     @State private var selection = 0
-    @State private var darkMode = false
+    @AppStorage("darkMode") var darkMode = false
 
     var body: some View {
-        TabView(selection: $selection) {
-            WikiView()
-                .font(.title)
-                .tabItem {
-                    VStack {
-                        Image(systemName: "lifepreserver.fill")
-                        Text("Wiki")
-                    }
-                }
-                .tag(0)
+        NavigationView {
+                TabView(selection: $selection) {
+                    WikiView()
+                        .font(.title)
+                        .tabItem {
+                            VStack {
+                                Image(systemName: "lifepreserver.fill")
+                                Text("Wiki")
+                            }
+                        }
+                        .tag(0)
+                        
 
-            TaskView()
-                .font(.title)
-                .tabItem {
-                    VStack {
-                        Image(systemName: "checkmark.seal.fill")
-                        Text("Task")
-                    }
-                }
-                .tag(1)
-            
-            LocationView()
-                .font(.title)
-                .tabItem {
-                    VStack {
-                        Image(systemName: "mappin.and.ellipse")
-                            .animation(.default)
-                        Text("Location")
-                    }
-                }
-                .tag(2)
+                    TaskView()
+                        .font(.title)
+                        .tabItem {
+                            VStack {
+                                Image(systemName: "checkmark.seal.fill")
+                                Text("Task")
+                            }
+                        }
+                        .tag(1)
+                    
+                    LocationView()
+                        .font(.title)
+                        .tabItem {
+                            VStack {
+                                Image(systemName: "mappin.and.ellipse")
+                                    .animation(.default)
+                                Text("Location")
+                            }
+                        }
+                        .tag(2)
 
-            MeView()
-                .font(.title)
-                .tabItem {
-                    VStack {
-                        Image(systemName: "person.circle.fill")
-                        Text("Me")
-                    }
+                    MeView()
+                        .font(.title)
+                        .tabItem {
+                            VStack {
+                                Image(systemName: "person.circle.fill")
+                                Text("Me")
+                            }
+                        }
+                        .tag(3)
                 }
-                .tag(3)
+                .toolbar {
+                    DarkModeSwitch(darkMode: $darkMode)
+                }
         }
+        .preferredColorScheme(darkMode ? .dark : .light)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Home()
     }
 }

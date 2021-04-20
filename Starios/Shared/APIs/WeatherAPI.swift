@@ -22,7 +22,7 @@ final class WeatherAPI: ObservableObject {
         query["appid"] = "7b9e2b19d463bf8d02f515c80c88f2e9"
         query["q"] = city
         
-        
+        //  MARK: - URLSession
         URLSession.shared.dataTask(with: baseURL.withQueries(query)!) { data, _, error in
             print(self.baseURL.withQueries(self.query)!)
             guard let data = data else { print(#line, #function, "\(error!.localizedDescription)"); return }

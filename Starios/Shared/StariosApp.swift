@@ -11,7 +11,30 @@ import SwiftUI
 struct StariosApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Group {
+                TabView {
+                    Home()
+                        .tabItem {
+                            Label("Home", systemImage: "house")
+                        }
+                    Wiki()
+                        .tabItem {
+                            Label("Wiki", systemImage: "lifepreserver.fill")
+                        }
+                    Mission()
+                        .tabItem {
+                            Label("Mission", systemImage: "checkmark.seal.fill")
+                        }
+                    Location()
+                        .tabItem {
+                            Label("Location", systemImage: "mappin.and.ellipse")
+                        }
+                    Me()
+                        .tabItem {
+                            Label("Me", systemImage: "person.circle.fill")
+                        }
+                }
+            }
         }
     }
 }

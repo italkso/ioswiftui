@@ -1,5 +1,5 @@
 //
-//  CityWeatherInfoView.swift
+//  CityWeatherInfo.swift
 //  Starios
 //
 //  Created by aaron on 2021/4/14.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CityWeatherInfoView: View {
+struct CityWeatherInfo: View {
     var weather: Weather?
 
     var body: some View {
@@ -27,8 +27,8 @@ struct CityWeatherInfoView: View {
     }
 }
 
-struct CityWeatherInfoView_Previews: PreviewProvider {
+struct CityWeatherInfo_Previews: PreviewProvider {
     static var previews: some View {
-        CityWeatherInfoView(weather: Weather.all())
+        CityWeatherInfo(weather: Weather.all())
     }
 }

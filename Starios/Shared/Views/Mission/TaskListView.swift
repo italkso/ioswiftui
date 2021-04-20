@@ -1,5 +1,5 @@
 //
-//  TaskListView.swift
+//  MissionListView.swift
 //  Starios
 //
 //  Created by aaron on 2021/4/15.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TaskListView: View {
+struct MissionListView: View {
     @State private var tasks = ["Mission 1", "Mission 2", "Mission 3", "Mission 4","Mission 5", "Mission 6", "Mission 7", "Mission 8"]
 
     var body: some View {
@@ -33,8 +33,8 @@ struct TaskListView: View {
     }
 }
 
-struct TaskListView_Previews: PreviewProvider {
+struct MissionListView_Previews: PreviewProvider {
     static var previews: some View {
-        TaskListView()
+        MissionListView()
     }
 }
