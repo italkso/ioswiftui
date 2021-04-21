@@ -29,7 +29,7 @@ struct Me: View {
                                     .font(.system(size: 25, weight: .bold, design: .rounded))
                                     .foregroundColor(.red)
                                 Button(action: {
-                                    SettingView()
+                                    //
                                 }) {
                                     Image(systemName: "gear")
                                 }
@@ -63,7 +63,7 @@ struct Me: View {
                         .padding(.horizontal, 5)
                         .offset(x: 5, y: 20)
                         Spacer()
-                        AvatarView().padding(.vertical).offset(x: 0, y: /*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)
+                        AvatarView().padding(.vertical).offset(x: 0, y: 10.0)
                     }
                     .padding()
                     .opacity(0.9)
@@ -96,9 +96,6 @@ struct Me: View {
                             .foregroundColor(.secondary)
                             .padding()
                     }
-                    
-                    
-                    
                 }
                 Form {
                     Section {

@@ -16,12 +16,12 @@ struct MissionListView: View {
                 Text(task)
                     .padding()
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
-                    .background(Color(red: 245 / 255, green: 246 / 255, blue: 250 / 255))
                     .cornerRadius(8)
-                    .contextMenu(ContextMenu(menuItems: {
-                        Text("取消")
-                        Text("标记")
-                        Text("分享")
+                    .contextMenu(
+                        ContextMenu(menuItems: {
+                        Text("Cancel")
+                        Text("Mark")
+                        Text("Share")
                     }))
             }
             .onMove(perform: moveListItem)

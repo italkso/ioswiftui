@@ -16,7 +16,7 @@ struct VisitNASAInApp: View {
         Button(action: {
             self.presentingSafariView = true
         }) {
-            RoundedButton(text: "Visit NASA in Starios", image: "arrow.up.forward.app")
+            RoundedButton(text: "Visit NASA", image: "arrow.up.forward.app")
         }
         .safariView(isPresented: $presentingSafariView) { SafariView(
         

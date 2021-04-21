@@ -11,7 +11,7 @@ struct Wiki: View {
     @State private var pickerIndex = 0
     @State var showModal = false
 
-    var pickerOptions = ["Mars", "Earth"]
+    let pickerOptions = ["Mars", "Earth"]
 
     var body: some View {
         NavigationView {

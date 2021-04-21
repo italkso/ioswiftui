@@ -23,7 +23,7 @@ struct FindView: View {
                         HStack {
                             Image(systemName: "magnifyingglass")
                                 .imageScale(.small)
-                                .foregroundColor(isSearching ?  .red : .orange)
+                                .foregroundColor(isSearching ?  .orange : .green)
                                 .frame(minWidth: 0 , maxWidth: .infinity, alignment: .leading)
                                 .padding(.horizontal,10)
                      
@@ -33,7 +33,7 @@ struct FindView: View {
                                 }) {
                                     Image(systemName: "multiply.circle.fill")
                                         .imageScale(.small)
-                                        .foregroundColor(.red)
+                                        .foregroundColor(.orange)
                                         .padding(.horizontal)
                                 }
                             }
