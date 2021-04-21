@@ -16,7 +16,7 @@ struct EarthView: View {
         Text("About Earth")
             .font(.system(size: 25, weight: .bold, design: .rounded))
             .padding()
-            .foregroundColor(.orange)
+            .foregroundColor(.accentColor)
             
         
         // Multiline Text

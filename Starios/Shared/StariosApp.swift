@@ -21,7 +21,7 @@ struct StariosApp: App {
                         .tabItem {
                             Label("Wiki", systemImage: "lifepreserver.fill")
                         }
-                    Mission()
+                    MissionsList()
                         .tabItem {
                             Label("Mission", systemImage: "checkmark.seal.fill")
                         }

@@ -11,20 +11,16 @@
 		931991F72629B5B300030FDD /* EarthVsMarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931991F52629B5B300030FDD /* EarthVsMarsView.swift */; };
 		931991FD2629DA4100030FDD /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931991FC2629DA4100030FDD /* TestView.swift */; };
 		931991FE2629DA4100030FDD /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931991FC2629DA4100030FDD /* TestView.swift */; };
-		93199208262BFF8B00030FDD /* AddMissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93199207262BFF8B00030FDD /* AddMissionView.swift */; };
-		93199209262BFF8B00030FDD /* AddMissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93199207262BFF8B00030FDD /* AddMissionView.swift */; };
-		93199223262C023600030FDD /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93199221262C023600030FDD /* Model.xcdatamodeld */; };
-		93199224262C023600030FDD /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93199221262C023600030FDD /* Model.xcdatamodeld */; };
-		93199236262C092D00030FDD /* MissionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93199235262C092D00030FDD /* MissionItemView.swift */; };
-		93199237262C092D00030FDD /* MissionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93199235262C092D00030FDD /* MissionItemView.swift */; };
+		93199208262BFF8B00030FDD /* AddMission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93199207262BFF8B00030FDD /* AddMission.swift */; };
+		93199209262BFF8B00030FDD /* AddMission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93199207262BFF8B00030FDD /* AddMission.swift */; };
 		9319929F262C13C100030FDD /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9319929E262C13C100030FDD /* SubView.swift */; };
 		931992A0262C13C100030FDD /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9319929E262C13C100030FDD /* SubView.swift */; };
 		931992A6262C13CE00030FDD /* SuperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931992A5262C13CE00030FDD /* SuperView.swift */; };
 		931992A7262C13CE00030FDD /* SuperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931992A5262C13CE00030FDD /* SuperView.swift */; };
+		93265616263025F00050C9A3 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93265615263025F00050C9A3 /* Profile.swift */; };
+		93265617263025F00050C9A3 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93265615263025F00050C9A3 /* Profile.swift */; };
 		9356596526282980003F156F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9356596426282980003F156F /* Extension.swift */; };
 		9356596626282980003F156F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9356596426282980003F156F /* Extension.swift */; };
-		9356597226282BF5003F156F /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9356597126282BF5003F156F /* TaskListView.swift */; };
-		9356597326282BF5003F156F /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9356597126282BF5003F156F /* TaskListView.swift */; };
 		9356599B26283673003F156F /* EarthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9356599A26283673003F156F /* EarthView.swift */; };
 		9356599C26283673003F156F /* EarthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9356599A26283673003F156F /* EarthView.swift */; };
 		93650A58262C8E9000D083C0 /* APODAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93650A57262C8E9000D083C0 /* APODAPI.swift */; };
@@ -45,8 +41,6 @@
 		937091C526249F8400134EC4 /* Wiki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937091C326249F8400134EC4 /* Wiki.swift */; };
 		937091CB26249FD200134EC4 /* FindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937091CA26249FD200134EC4 /* FindView.swift */; };
 		937091CC26249FD200134EC4 /* FindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937091CA26249FD200134EC4 /* FindView.swift */; };
-		937091D22624A01300134EC4 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937091D12624A01300134EC4 /* Mission.swift */; };
-		937091D32624A01300134EC4 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937091D12624A01300134EC4 /* Mission.swift */; };
 		937091D92624A03800134EC4 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937091D82624A03800134EC4 /* SettingView.swift */; };
 		937091DA2624A03800134EC4 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937091D82624A03800134EC4 /* SettingView.swift */; };
 		937091E026251CBC00134EC4 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937091DF26251CBB00134EC4 /* SignInView.swift */; };
@@ -61,8 +55,6 @@
 		93779B332626D0D800F317C3 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93779B312626D0D800F317C3 /* WeatherAPI.swift */; };
 		93779B452626D24900F317C3 /* CityWeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93779B442626D24900F317C3 /* CityWeatherInfo.swift */; };
 		93779B462626D24900F317C3 /* CityWeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93779B442626D24900F317C3 /* CityWeatherInfo.swift */; };
-		93A01B9D262746D500157933 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A01B9C262746D500157933 /* UserData.swift */; };
-		93A01B9E262746D500157933 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A01B9C262746D500157933 /* UserData.swift */; };
 		93A01BAB2627482A00157933 /* MarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A01BAA2627482A00157933 /* MarkView.swift */; };
 		93A01BAC2627482A00157933 /* MarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A01BAA2627482A00157933 /* MarkView.swift */; };
 		93A01BB226274B5500157933 /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A01BB126274B5500157933 /* CountdownView.swift */; };
@@ -84,6 +76,10 @@
 		93F53682262DB12000A63868 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F53680262DB12000A63868 /* RoundedButton.swift */; };
 		93F53688262DB76D00A63868 /* VisitNASAInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F53687262DB76D00A63868 /* VisitNASAInApp.swift */; };
 		93F53689262DB76D00A63868 /* VisitNASAInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F53687262DB76D00A63868 /* VisitNASAInApp.swift */; };
+		93F53724262FCAE200A63868 /* MissionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F53723262FCAE100A63868 /* MissionData.swift */; };
+		93F53725262FCAE200A63868 /* MissionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F53723262FCAE100A63868 /* MissionData.swift */; };
+		93F5373A262FCD1700A63868 /* MissionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F53739262FCD1700A63868 /* MissionsList.swift */; };
+		93F5373B262FCD1700A63868 /* MissionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F53739262FCD1700A63868 /* MissionsList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,13 +102,11 @@
 /* Begin PBXFileReference section */
 		931991F52629B5B300030FDD /* EarthVsMarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthVsMarsView.swift; sourceTree = "<group>"; };
 		931991FC2629DA4100030FDD /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
-		93199207262BFF8B00030FDD /* AddMissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMissionView.swift; sourceTree = "<group>"; };
-		93199222262C023600030FDD /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		93199235262C092D00030FDD /* MissionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionItemView.swift; sourceTree = "<group>"; };
+		93199207262BFF8B00030FDD /* AddMission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMission.swift; sourceTree = "<group>"; };
 		9319929E262C13C100030FDD /* SubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
 		931992A5262C13CE00030FDD /* SuperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperView.swift; sourceTree = "<group>"; };
+		93265615263025F00050C9A3 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		9356596426282980003F156F /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		9356597126282BF5003F156F /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		9356599A26283673003F156F /* EarthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthView.swift; sourceTree = "<group>"; };
 		93650A57262C8E9000D083C0 /* APODAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODAPI.swift; sourceTree = "<group>"; };
 		93650A85262D197C00D083C0 /* DarkModeSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeSwitch.swift; sourceTree = "<group>"; };
@@ -133,7 +127,6 @@
 		937091BC26249EFF00134EC4 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		937091C326249F8400134EC4 /* Wiki.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wiki.swift; sourceTree = "<group>"; };
 		937091CA26249FD200134EC4 /* FindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindView.swift; sourceTree = "<group>"; };
-		937091D12624A01300134EC4 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 		937091D82624A03800134EC4 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		937091DF26251CBB00134EC4 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		937091E62625276000134EC4 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
@@ -141,7 +134,6 @@
 		93779B1D2626D05600F317C3 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		93779B312626D0D800F317C3 /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
 		93779B442626D24900F317C3 /* CityWeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeatherInfo.swift; sourceTree = "<group>"; };
-		93A01B9C262746D500157933 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		93A01BAA2627482A00157933 /* MarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkView.swift; sourceTree = "<group>"; };
 		93A01BB126274B5500157933 /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
 		93A01BB92627C15400157933 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
@@ -152,6 +144,8 @@
 		93E924F02626056A007FD256 /* CurrentTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTimeView.swift; sourceTree = "<group>"; };
 		93F53680262DB12000A63868 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		93F53687262DB76D00A63868 /* VisitNASAInApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitNASAInApp.swift; sourceTree = "<group>"; };
+		93F53723262FCAE100A63868 /* MissionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionData.swift; sourceTree = "<group>"; };
+		93F53739262FCD1700A63868 /* MissionsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,11 +194,9 @@
 		9356597826282C00003F156F /* Mission */ = {
 			isa = PBXGroup;
 			children = (
-				937091D12624A01300134EC4 /* Mission.swift */,
-				9356597126282BF5003F156F /* TaskListView.swift */,
-				93A01BB126274B5500157933 /* CountdownView.swift */,
-				93199207262BFF8B00030FDD /* AddMissionView.swift */,
-				93199235262C092D00030FDD /* MissionItemView.swift */,
+				93F53739262FCD1700A63868 /* MissionsList.swift */,
+				93199207262BFF8B00030FDD /* AddMission.swift */,
+				93A01BAA2627482A00157933 /* MarkView.swift */,
 			);
 			path = Mission;
 			sourceTree = "<group>";
@@ -221,10 +213,10 @@
 		9356598D26282CB4003F156F /* Model + ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				93199221262C023600030FDD /* Model.xcdatamodeld */,
 				9356596426282980003F156F /* Extension.swift */,
 				93779B1D2626D05600F317C3 /* Weather.swift */,
-				93A01B9C262746D500157933 /* UserData.swift */,
+				93265615263025F00050C9A3 /* Profile.swift */,
+				93F53723262FCAE100A63868 /* MissionData.swift */,
 			);
 			path = "Model + ViewModel";
 			sourceTree = "<group>";
@@ -247,6 +239,7 @@
 				9370917B26247D8200134EC4 /* StariosApp.swift */,
 				9356598D26282CB4003F156F /* Model + ViewModel */,
 				93F536C2262DC50A00A63868 /* Views */,
+				93E924FB26268A4C007FD256 /* Component */,
 				93779B382626D0E400F317C3 /* APIs */,
 				93199291262C119C00030FDD /* MyTest */,
 				9370917D26247D8400134EC4 /* Assets.xcassets */,
@@ -337,11 +330,11 @@
 		93E924FB26268A4C007FD256 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				93A01BB126274B5500157933 /* CountdownView.swift */,
 				93E924F02626056A007FD256 /* CurrentTimeView.swift */,
 				937091CA26249FD200134EC4 /* FindView.swift */,
 				93E924D02626010A007FD256 /* ImagePicker.swift */,
 				93779B162626CEAB00F317C3 /* MapView.swift */,
-				93A01BAA2627482A00157933 /* MarkView.swift */,
 				93F53680262DB12000A63868 /* RoundedButton.swift */,
 			);
 			path = Component;
@@ -355,7 +348,6 @@
 				9356597826282C00003F156F /* Mission */,
 				9356597D26282C21003F156F /* Location */,
 				937091ED2625278F00134EC4 /* Me */,
-				93E924FB26268A4C007FD256 /* Component */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -536,7 +528,7 @@
 				931991FD2629DA4100030FDD /* TestView.swift in Sources */,
 				937091CB26249FD200134EC4 /* FindView.swift in Sources */,
 				93779B1E2626D05600F317C3 /* Weather.swift in Sources */,
-				93199208262BFF8B00030FDD /* AddMissionView.swift in Sources */,
+				93199208262BFF8B00030FDD /* AddMission.swift in Sources */,
 				9356599B26283673003F156F /* EarthView.swift in Sources */,
 				93779B172626CEAB00F317C3 /* MapView.swift in Sources */,
 				937091C426249F8400134EC4 /* Wiki.swift in Sources */,
@@ -546,23 +538,21 @@
 				937091A626247D8400134EC4 /* Home.swift in Sources */,
 				93A01BB226274B5500157933 /* CountdownView.swift in Sources */,
 				9356596526282980003F156F /* Extension.swift in Sources */,
+				93F5373A262FCD1700A63868 /* MissionsList.swift in Sources */,
 				93650A86262D197D00D083C0 /* DarkModeSwitch.swift in Sources */,
 				93E924D82626016A007FD256 /* ImagePickerView.swift in Sources */,
 				937091D92624A03800134EC4 /* SettingView.swift in Sources */,
-				93199236262C092D00030FDD /* MissionItemView.swift in Sources */,
+				93F53724262FCAE200A63868 /* MissionData.swift in Sources */,
 				931991F62629B5B300030FDD /* EarthVsMarsView.swift in Sources */,
 				9319929F262C13C100030FDD /* SubView.swift in Sources */,
 				93779B322626D0D800F317C3 /* WeatherAPI.swift in Sources */,
 				93A01BBA2627C15400157933 /* AvatarView.swift in Sources */,
-				937091D22624A01300134EC4 /* Mission.swift in Sources */,
 				937091BD26249EFF00134EC4 /* Location.swift in Sources */,
 				93E924D12626010B007FD256 /* ImagePicker.swift in Sources */,
-				93199223262C023600030FDD /* Model.xcdatamodeld in Sources */,
+				93265616263025F00050C9A3 /* Profile.swift in Sources */,
 				937091E72625276000134EC4 /* MeView.swift in Sources */,
-				9356597226282BF5003F156F /* TaskListView.swift in Sources */,
 				937091E026251CBC00134EC4 /* SignInView.swift in Sources */,
 				937091A426247D8400134EC4 /* StariosApp.swift in Sources */,
-				93A01B9D262746D500157933 /* UserData.swift in Sources */,
 				93F53681262DB12000A63868 /* RoundedButton.swift in Sources */,
 				931992A6262C13CE00030FDD /* SuperView.swift in Sources */,
 				93A01BC12627CABF00157933 /* MarsView.swift in Sources */,
@@ -579,7 +569,7 @@
 				931991FE2629DA4100030FDD /* TestView.swift in Sources */,
 				937091CC26249FD200134EC4 /* FindView.swift in Sources */,
 				93779B1F2626D05600F317C3 /* Weather.swift in Sources */,
-				93199209262BFF8B00030FDD /* AddMissionView.swift in Sources */,
+				93199209262BFF8B00030FDD /* AddMission.swift in Sources */,
 				9356599C26283673003F156F /* EarthView.swift in Sources */,
 				93779B182626CEAB00F317C3 /* MapView.swift in Sources */,
 				937091C526249F8400134EC4 /* Wiki.swift in Sources */,
@@ -589,23 +579,21 @@
 				937091A726247D8400134EC4 /* Home.swift in Sources */,
 				93A01BB326274B5500157933 /* CountdownView.swift in Sources */,
 				9356596626282980003F156F /* Extension.swift in Sources */,
+				93F5373B262FCD1700A63868 /* MissionsList.swift in Sources */,
 				93650A87262D197D00D083C0 /* DarkModeSwitch.swift in Sources */,
 				93E924D92626016A007FD256 /* ImagePickerView.swift in Sources */,
 				937091DA2624A03800134EC4 /* SettingView.swift in Sources */,
-				93199237262C092D00030FDD /* MissionItemView.swift in Sources */,
+				93F53725262FCAE200A63868 /* MissionData.swift in Sources */,
 				931991F72629B5B300030FDD /* EarthVsMarsView.swift in Sources */,
 				931992A0262C13C100030FDD /* SubView.swift in Sources */,
 				93779B332626D0D800F317C3 /* WeatherAPI.swift in Sources */,
 				93A01BBB2627C15400157933 /* AvatarView.swift in Sources */,
-				937091D32624A01300134EC4 /* Mission.swift in Sources */,
 				937091BE26249EFF00134EC4 /* Location.swift in Sources */,
 				93E924D22626010B007FD256 /* ImagePicker.swift in Sources */,
-				93199224262C023600030FDD /* Model.xcdatamodeld in Sources */,
+				93265617263025F00050C9A3 /* Profile.swift in Sources */,
 				937091E82625276000134EC4 /* MeView.swift in Sources */,
-				9356597326282BF5003F156F /* TaskListView.swift in Sources */,
 				937091E126251CBC00134EC4 /* SignInView.swift in Sources */,
 				937091A526247D8400134EC4 /* StariosApp.swift in Sources */,
-				93A01B9E262746D500157933 /* UserData.swift in Sources */,
 				93F53682262DB12000A63868 /* RoundedButton.swift in Sources */,
 				931992A7262C13CE00030FDD /* SuperView.swift in Sources */,
 				93A01BC22627CABF00157933 /* MarsView.swift in Sources */,
@@ -808,6 +796,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = Q3926B75A9;
@@ -832,6 +821,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = Q3926B75A9;
@@ -1007,19 +997,6 @@
 			productName = BetterSafariView;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		93199221262C023600030FDD /* Model.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				93199222262C023600030FDD /* Model.xcdatamodel */,
-			);
-			currentVersion = 93199222262C023600030FDD /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 9370917626247D8200134EC4 /* Project object */;
 }

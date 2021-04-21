@@ -20,7 +20,7 @@ struct RoundedButton: View {
         .font(.headline)
         .padding(10)
         .foregroundColor(.white)
-        .background(Color.blue)
+        .background(Color.accentColor)
         .opacity(0.9)
         .cornerRadius(15)
         .shadow(radius: 5)

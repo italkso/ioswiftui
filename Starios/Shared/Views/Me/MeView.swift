@@ -10,7 +10,7 @@ import SwiftUI
 struct Me: View {
     @State private var degree: Double = 0
     @State private var showEditSheet = false
-    @State private var showScanSheet = false
+    @State private var showSheet = false
     @State private var amount2: CGFloat = 1
 
     let name = "Ernst Mach"
@@ -20,58 +20,49 @@ struct Me: View {
 
     var body: some View {
         NavigationView {
-            ScrollView {
-                VStack {
-                    HStack {
-                        VStack(alignment: .leading, spacing: 10) {
-                            HStack {
-                                Text("\(name)")
-                                    .font(.system(size: 25, weight: .bold, design: .rounded))
-                                    .foregroundColor(.red)
-                                Button(action: {
-                                    //
-                                }) {
-                                    Image(systemName: "gear")
-                                }
-                                
-                            }
+                ScrollView {
+                    VStack(alignment: .center) {
+                        AvatarView()
+                            .padding()
+                            .offset(x: 0, y: 10.0)
 
-                            HStack {
-                                Text("ID: \(id)")
-                                    .font(.footnote)
-                                    .foregroundColor(.primary)
-                                Image(systemName: "qrcode")
-                                    .resizable()
-                                    .frame(width: 10, height: 10, alignment: .center)
-                                    .imageScale(.small)
-                                    .scaledToFit()
-                                    .foregroundColor(.primary)
-                            }
+                        Text("\(name)")
+                            .font(.system(size: 20, weight: .bold, design: .rounded))
+                            .foregroundColor(.accentColor)
 
-                            HStack(alignment: .top, spacing: 10) {
-                                Text("\(bio)")
-                                    .font(.footnote)
-                                    .foregroundColor(.primary)
-                                Image(systemName: "square.and.pencil")
-                                    .resizable()
-                                    .frame(width: 15, height: 15, alignment: .center)
-                                    .imageScale(.small)
-                                    .scaledToFit()
-                                    .foregroundColor(.primary)
-                            }
+                        HStack {
+                            Text("ID: \(id)")
+                                .font(.footnote)
+                                .foregroundColor(.primary)
+                            Image(systemName: "qrcode")
+                                .resizable()
+                                .frame(width: 10, height: 10, alignment: .center)
+                                .imageScale(.small)
+                                .scaledToFit()
+                                .foregroundColor(.primary)
                         }
-                        .padding(.horizontal, 5)
-                        .offset(x: 5, y: 20)
-                        Spacer()
-                        AvatarView().padding(.vertical).offset(x: 0, y: 10.0)
-                    }
-                    .padding()
-                    .opacity(0.9)
 
-                    VStack(alignment: .leading, spacing: 20) {
+                        HStack(alignment: .top, spacing: 10) {
+                            Text("\(bio)")
+                                .font(.footnote)
+                                .foregroundColor(.primary)
+                            Image(systemName: "square.and.pencil")
+                                .resizable()
+                                .frame(width: 15, height: 15, alignment: .center)
+                                .imageScale(.small)
+                                .scaledToFit()
+                                .foregroundColor(.primary)
+                        }
+                    }.padding()
+                    
+
+                    VStack(alignment: .center) {
                         Text("Collections")
                             .font(.system(size: 20, weight: .bold, design: .rounded))
+                            .foregroundColor(.accentColor)
                             .padding()
+                        
+                        Divider()
 
                         // MARK: - ScrollView
 
@@ -97,15 +88,16 @@ struct Me: View {
                             .padding()
                     }
                 }
-                Form {
-                    Section {
-                        HStack {
-                            Image(systemName: "gear")
-                            NavigationLink("Settings", destination: SettingView())
-                        }
+                .navigationBarItems(
+                    trailing:
+                    Button(action: {
+                       // TODO: - Countdown
+                        self.showSheet = true
+                    }) {
+                        Image(systemName: "gear")
+                            .imageScale(.large).foregroundColor(.accentColor)
                     }
-                }
-            }
+                ).sheet(isPresented: $showSheet) { SettingView() }
         }
     }
 }
@@ -115,10 +107,10 @@ struct CollectionsModifirer: ViewModifier {
     func body(content: Content) -> some View {
         content
             .frame(width: 90, height: 90, alignment: .center)
-            .background(Color.orange)
+            .background(Color.accentColor)
             .opacity(0.9)
             .cornerRadius(20)
-            .shadow(color: .orange, radius: 5, x: 5, y: 5)
+            .shadow(color: .white, radius: 5, x: 5, y: 5)
             .padding()
     }
 }

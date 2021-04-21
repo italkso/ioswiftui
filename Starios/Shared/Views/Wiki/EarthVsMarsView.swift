@@ -14,7 +14,7 @@ struct EarthVsMarsView: View {
         VStack(alignment: .leading, spacing: 20) {
             
             Text("Comparison")
-                .foregroundColor(.orange)
+                .foregroundColor(.accentColor)
                 .font(.system(size: 25, weight: .bold, design: .rounded))
             
             

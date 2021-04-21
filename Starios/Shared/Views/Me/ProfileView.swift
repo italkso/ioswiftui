@@ -9,12 +9,19 @@ import SwiftUI
 
 struct ProfileView: View {
     
-    @State var introduction = "Write something about yourself..."
+    @StateObject var peofileData = ProfileData()
+    
+    @State var nameInput = ""
+    @State var bioInput = ""
+    
+    @State var introduction = ""
     
     var body: some View {
             VStack {
                 ImagePickerView()
-                TextEditor(text: $introduction)
+                TextField("name",text: $nameInput).padding()
+                TextField("bio",text: $bioInput).padding()
+                TextField("Introduction",text: $introduction)
                     .font(.body)
                     .foregroundColor(.primary)
                     .padding()

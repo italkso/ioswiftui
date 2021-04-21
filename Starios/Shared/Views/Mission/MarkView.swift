@@ -18,13 +18,13 @@ struct MarkView: View {
             }){
                     Image(systemName: "checkmark.seal.fill")
                         .imageScale(.medium)
-                        .foregroundColor(enabled ? .orange : .green)
-                        .rotationEffect(Angle(degrees: 30))
+                        .foregroundColor(enabled ? .accentColor : .secondary)
+                        .rotationEffect(Angle(degrees: 15))
                         .animation(.default)
-                        .onTapGesture {
+                        .onTapGesture(count: 2, perform: {
                             self.isMarked = true
                             self.enabled = true
-                    }
+                        })
             }
     }
 }

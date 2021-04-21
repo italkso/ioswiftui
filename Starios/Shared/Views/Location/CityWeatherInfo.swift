@@ -14,12 +14,12 @@ struct CityWeatherInfo: View {
         VStack(alignment: .leading, spacing: 5) {
             Text("\(weather?.name ?? "Unkonwn")")
                 .font(.system(size: 25, weight: .bold, design: .rounded))
-                .foregroundColor(.orange)
+                .foregroundColor(.accentColor)
             HStack(alignment: .top, spacing: 30) {
-                CurrentTimeView()
-                VStack(alignment: .leading, spacing: 8) {
+                HStack {
                     Text("Tempature: \(String(format: "%.0f", weather?.main.temp ?? 0)) ºC")
                         .bold()
+                    Spacer()
                     Text("Humidity: \(String(format: "%.0f", weather?.main.humidity ?? 0)) %")
                 }.font(.subheadline)
             }

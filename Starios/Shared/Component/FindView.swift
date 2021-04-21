@@ -8,32 +8,33 @@
 import SwiftUI
 
 struct FindView: View {
+    @Environment(\.managedObjectContext) var context
     
-    @State var searchItem = ""
+    @Binding var title: String
     @State private var isSearching = false
     
     var body: some View {
         VStack{
             HStack{
-                TextField("Search",text: $searchItem)
+                TextField("Search",text: $title)
                     .font(.headline)
                     .padding()
-                    .padding(.horizontal, 25)
+                    .padding(.horizontal, 20)
                     .overlay(
                         HStack {
                             Image(systemName: "magnifyingglass")
-                                .imageScale(.small)
-                                .foregroundColor(isSearching ?  .orange : .green)
+                                .imageScale(.medium)
+                                .foregroundColor(isSearching ?  .blue : .orange)
                                 .frame(minWidth: 0 , maxWidth: .infinity, alignment: .leading)
                                 .padding(.horizontal,10)
                      
                             if isSearching {
                                 Button(action: {
-                                    self.searchItem = ""
+                                    self.title = ""
                                 }) {
                                     Image(systemName: "multiply.circle.fill")
-                                        .imageScale(.small)
-                                        .foregroundColor(.orange)
+                                        .imageScale(.medium)
+                                        .foregroundColor(.accentColor)
                                         .padding(.horizontal)
                                 }
                             }
@@ -42,21 +43,21 @@ struct FindView: View {
                     .overlay(
                         Capsule().stroke(Color( self.isSearching ? .orange : .gray))
                     )
-                    .padding(10)
                     .onTapGesture {
                         self.isSearching = true
                     }
+                
                 if isSearching {
                     Button(action: {
                         self.isSearching = false
-                        self.searchItem = ""
+                        self.title = ""
                         
                         // Hide Keyboard
                         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
                     }){
                         Text("Cancel")
                             .font(.subheadline)
-                            .foregroundColor(.orange)
+                            .foregroundColor(.accentColor)
                             .padding(.trailing,10)
                         
                     }
@@ -70,6 +71,6 @@ struct FindView: View {
 
 struct FindView_Previews: PreviewProvider {
     static var previews: some View {
-        FindView()
+        FindView(title: .constant(""))
     }
 }

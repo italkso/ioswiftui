@@ -16,7 +16,7 @@ struct MarsView: View {
         Text("About Mars")
             .font(.system(size: 25, weight: .bold, design: .rounded))
             .padding()
-            .foregroundColor(.orange)
+            .foregroundColor(.accentColor)
             
         
         // Multiline Text

@@ -13,18 +13,15 @@ struct Home: View {
     var body: some View {
         NavigationView {
             ZStack {
-//                Image("astronaut")
-//                    .edgesIgnoringSafeArea(.horizontal)
                 VStack(alignment: .center, spacing: 50) {
+                    CurrentTimeView()
+                        .font(.largeTitle)
+                    
                     Text("Let's go to Mars")
                         .font(.system(size: 25, weight: .bold, design: .rounded))
-                        .foregroundColor(.orange)
-                    
-                    FindView(searchItem: "")
-                        .frame(width: UIScreen.main.bounds.width / 1.05, height: UIScreen.main.bounds.height / 10, alignment: .center)
+                        .foregroundColor(.accentColor)
                     
                     VisitNASAInApp().padding(.vertical)
-                    
                 }.padding()
             }
             .toolbar {

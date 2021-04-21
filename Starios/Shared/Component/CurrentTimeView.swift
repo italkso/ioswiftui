@@ -14,12 +14,12 @@ struct CurrentTimeView: View {
         let formattedCurrTime = getFormattedCurrTime(format: "HH : mm")
             let formattedCurrDate = getFormattedCurrTime(format: "EEEE, MMMM dd")
         
-        return VStack(alignment: .leading, spacing: 10) {
+        return VStack(alignment: .center, spacing: 10) {
             Text("\(formattedCurrTime)").bold()
             Text("\(formattedCurrDate)")
         }
         .font(.subheadline)
-        .foregroundColor(.primary)
+        .foregroundColor(.accentColor)
         
     }
     
