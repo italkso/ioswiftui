@@ -4,7 +4,7 @@ This a open source project for Swift and SwiftUI test.
 
 
 
-<center> 
+<figure> 
     <img src = "images/Starios01.png" width = "15%"/>
     <img src = "images/Starios02.png" width = "15%"/>
     <img src = "images/Starios03.png" width = "15%"/>
@@ -17,6 +17,7 @@ This a open source project for Swift and SwiftUI test.
     <img src = "images/Starios09.png" width = "15%"/>
     <img src = "images/Starios10.png" width = "15%"/>
     <img src = "images/Starios11.png" width = "15%"/>
-</center>
+</figure>
 
 ​	
+
