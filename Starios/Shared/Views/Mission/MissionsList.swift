@@ -28,9 +28,9 @@ struct MissionsList: View {
                 List {
                     Toggle(isOn: $showMarkedOnly) {
                             Text("Marked")
-                        .font(.system(size: 20))
-                        .foregroundColor(.accentColor)
-                    }
+                                .font(.system(size:25, weight:.bold, design:.rounded))
+                        .foregroundColor(.orange)
+                    }.toggleStyle(DefaultToggleStyle())
                     
                     ForEach(self.missionData.missions.filter({ mission in
                         
@@ -42,21 +42,31 @@ struct MissionsList: View {
                                 HStack{
                                     Text(mission.title)
                                     .font(.title3)
+                                        .foregroundColor(.accentColor)
                                     .bold()
+                                        .padding(.vertical,10)
                                     Spacer()
                                 }
                                 Text(mission.content)
-                            }.contextMenu(
+                                    .font(.footnote)
+                                    .lineLimit(1)
+                            }
+                            .contextMenu(
                                 ContextMenu(menuItems: {
                                 Text("Share")
                             }))
+                            
                         }
                     }
                     .onDelete(perform: deleteListItem)
                     .onMove(perform: moveListItem)
+                    .onAppear { UITableView.appearance().separatorStyle = .none }
+                    .animation(.default)
+                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
+                    .cornerRadius(5)
                 }.listStyle(InsetGroupedListStyle())
                 
-                Spacer(minLength: 10)
+                Spacer(minLength: 15)
             }
             .navigationBarItems(
                 leading:

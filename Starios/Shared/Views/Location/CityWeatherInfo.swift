@@ -15,13 +15,14 @@ struct CityWeatherInfo: View {
             Text("\(weather?.name ?? "Unkonwn")")
                 .font(.system(size: 25, weight: .bold, design: .rounded))
                 .foregroundColor(.accentColor)
-            HStack(alignment: .top, spacing: 30) {
+            VStack(alignment: .leading) {
                 HStack {
-                    Text("Tempature: \(String(format: "%.0f", weather?.main.temp ?? 0)) ºC")
+                    Text("Tempature : \(String(format: "%.0f", weather?.main.temp ?? 0)) ºC")
                         .bold()
                     Spacer()
-                    Text("Humidity: \(String(format: "%.0f", weather?.main.humidity ?? 0)) %")
-                }.font(.subheadline)
+                    Text("Humidity : \(String(format: "%.0f", weather?.main.humidity ?? 0)) %")
+                        .bold()
+                }.font(.subheadline).padding(.vertical)
             }
         }.padding()
     }

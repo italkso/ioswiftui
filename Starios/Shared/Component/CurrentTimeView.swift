@@ -11,7 +11,7 @@ struct CurrentTimeView: View {
     var currentTime = Date()
     
     var body: some View {
-        let formattedCurrTime = getFormattedCurrTime(format: "HH : mm")
+        let formattedCurrTime = getFormattedCurrTime(format: "HH : mm : ss")
             let formattedCurrDate = getFormattedCurrTime(format: "EEEE, MMMM dd")
         
         return VStack(alignment: .center, spacing: 10) {
