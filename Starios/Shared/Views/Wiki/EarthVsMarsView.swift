@@ -9,13 +9,16 @@ import SwiftUI
 
 struct EarthVsMarsView: View {
     @State var showActionSheet = false
+    @State private var size: Double = 20
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             
+            Slider(value: $size, in: 5...30, step:1)
+            
             Text("Comparison")
                 .foregroundColor(.accentColor)
-                .font(.system(size: 25, weight: .bold, design: .rounded))
+                .font(.system(size: CGFloat(size), weight: .bold, design: .rounded))
             
             
                 

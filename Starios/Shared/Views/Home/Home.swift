@@ -17,6 +17,8 @@ struct Home: View {
                     CurrentTimeView()
                         .font(.largeTitle)
                     
+                    
+                    
                     Text("Let's go to Mars")
                         .font(.system(size: 25, weight: .bold, design: .rounded))
                         .foregroundColor(.accentColor)

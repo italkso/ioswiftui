@@ -24,7 +24,7 @@ struct CityWeatherInfo: View {
                         .bold()
                 }.font(.subheadline).padding(.vertical)
             }
-        }.padding()
+        }.padding(.horizontal)
     }
 }
 

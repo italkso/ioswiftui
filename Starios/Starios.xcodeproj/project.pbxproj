@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9306F3482633CD0F002A6514 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9306F3472633CD0E002A6514 /* SliderView.swift */; };
+		9306F3492633CD0F002A6514 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9306F3472633CD0E002A6514 /* SliderView.swift */; };
+		9306F37A2633FA32002A6514 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9306F3582633F69E002A6514 /* WidgetKit.framework */; };
+		9306F37B2633FA32002A6514 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9306F35A2633F69E002A6514 /* SwiftUI.framework */; };
+		9306F37E2633FA32002A6514 /* StariosWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9306F37D2633FA32002A6514 /* StariosWidget.swift */; };
+		9306F3812633FA35002A6514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9306F3802633FA35002A6514 /* Assets.xcassets */; };
+		9306F3832633FA35002A6514 /* StariosWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9306F37F2633FA32002A6514 /* StariosWidget.intentdefinition */; };
+		9306F3842633FA35002A6514 /* StariosWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9306F37F2633FA32002A6514 /* StariosWidget.intentdefinition */; };
+		9306F3872633FA35002A6514 /* StariosWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9306F3792633FA32002A6514 /* StariosWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		931991F62629B5B300030FDD /* EarthVsMarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931991F52629B5B300030FDD /* EarthVsMarsView.swift */; };
 		931991F72629B5B300030FDD /* EarthVsMarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931991F52629B5B300030FDD /* EarthVsMarsView.swift */; };
 		931991FD2629DA4100030FDD /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931991FC2629DA4100030FDD /* TestView.swift */; };
@@ -83,6 +92,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9306F3852633FA35002A6514 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9370917626247D8200134EC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9306F3782633FA32002A6514;
+			remoteInfo = StariosWidgetExtension;
+		};
 		9370919326247D8400134EC4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9370917626247D8200134EC4 /* Project object */;
@@ -99,7 +115,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9306F36B2633F6A2002A6514 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9306F3872633FA35002A6514 /* StariosWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		9306F3472633CD0E002A6514 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		9306F3582633F69E002A6514 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		9306F35A2633F69E002A6514 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		9306F3792633FA32002A6514 /* StariosWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StariosWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9306F37D2633FA32002A6514 /* StariosWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StariosWidget.swift; sourceTree = "<group>"; };
+		9306F37F2633FA32002A6514 /* StariosWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = StariosWidget.intentdefinition; sourceTree = "<group>"; };
+		9306F3802633FA35002A6514 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9306F3822633FA35002A6514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		931991F52629B5B300030FDD /* EarthVsMarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthVsMarsView.swift; sourceTree = "<group>"; };
 		931991FC2629DA4100030FDD /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		93199207262BFF8B00030FDD /* AddMission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMission.swift; sourceTree = "<group>"; };
@@ -149,6 +187,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9306F3762633FA32002A6514 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9306F37B2633FA32002A6514 /* SwiftUI.framework in Frameworks */,
+				9306F37A2633FA32002A6514 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9370917F26247D8400134EC4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,6 +228,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9306F3572633F69E002A6514 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9306F3582633F69E002A6514 /* WidgetKit.framework */,
+				9306F35A2633F69E002A6514 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9306F37C2633FA32002A6514 /* StariosWidget */ = {
+			isa = PBXGroup;
+			children = (
+				9306F37D2633FA32002A6514 /* StariosWidget.swift */,
+				9306F37F2633FA32002A6514 /* StariosWidget.intentdefinition */,
+				9306F3802633FA35002A6514 /* Assets.xcassets */,
+				9306F3822633FA35002A6514 /* Info.plist */,
+			);
+			path = StariosWidget;
+			sourceTree = "<group>";
+		};
 		93199291262C119C00030FDD /* MyTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +296,8 @@
 				9370918B26247D8400134EC4 /* macOS */,
 				9370919526247D8400134EC4 /* Tests iOS */,
 				937091A026247D8400134EC4 /* Tests macOS */,
+				9306F37C2633FA32002A6514 /* StariosWidget */,
+				9306F3572633F69E002A6514 /* Frameworks */,
 				9370918326247D8400134EC4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -254,6 +323,7 @@
 				9370918A26247D8400134EC4 /* Starios.app */,
 				9370919226247D8400134EC4 /* Tests iOS.xctest */,
 				9370919D26247D8400134EC4 /* Tests macOS.xctest */,
+				9306F3792633FA32002A6514 /* StariosWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -336,6 +406,7 @@
 				93E924D02626010A007FD256 /* ImagePicker.swift */,
 				93779B162626CEAB00F317C3 /* MapView.swift */,
 				93F53680262DB12000A63868 /* RoundedButton.swift */,
+				9306F3472633CD0E002A6514 /* SliderView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -364,6 +435,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9306F3782633FA32002A6514 /* StariosWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9306F3882633FA35002A6514 /* Build configuration list for PBXNativeTarget "StariosWidgetExtension" */;
+			buildPhases = (
+				9306F3752633FA32002A6514 /* Sources */,
+				9306F3762633FA32002A6514 /* Frameworks */,
+				9306F3772633FA32002A6514 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StariosWidgetExtension;
+			productName = StariosWidgetExtension;
+			productReference = 9306F3792633FA32002A6514 /* StariosWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		9370918126247D8400134EC4 /* Starios (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 937091AC26247D8400134EC4 /* Build configuration list for PBXNativeTarget "Starios (iOS)" */;
@@ -371,10 +459,12 @@
 				9370917E26247D8400134EC4 /* Sources */,
 				9370917F26247D8400134EC4 /* Frameworks */,
 				9370918026247D8400134EC4 /* Resources */,
+				9306F36B2633F6A2002A6514 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9306F3862633FA35002A6514 /* PBXTargetDependency */,
 			);
 			name = "Starios (iOS)";
 			packageProductDependencies = (
@@ -446,6 +536,9 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					9306F3782633FA32002A6514 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					9370918126247D8400134EC4 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -482,11 +575,20 @@
 				9370918926247D8400134EC4 /* Starios (macOS) */,
 				9370919126247D8400134EC4 /* Tests iOS */,
 				9370919C26247D8400134EC4 /* Tests macOS */,
+				9306F3782633FA32002A6514 /* StariosWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9306F3772633FA32002A6514 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9306F3812633FA35002A6514 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9370918026247D8400134EC4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -520,6 +622,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9306F3752633FA32002A6514 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9306F3832633FA35002A6514 /* StariosWidget.intentdefinition in Sources */,
+				9306F37E2633FA32002A6514 /* StariosWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9370917E26247D8400134EC4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -558,6 +669,8 @@
 				93A01BC12627CABF00157933 /* MarsView.swift in Sources */,
 				93E924F12626056A007FD256 /* CurrentTimeView.swift in Sources */,
 				93A01BAB2627482A00157933 /* MarkView.swift in Sources */,
+				9306F3482633CD0F002A6514 /* SliderView.swift in Sources */,
+				9306F3842633FA35002A6514 /* StariosWidget.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,6 +712,7 @@
 				93A01BC22627CABF00157933 /* MarsView.swift in Sources */,
 				93E924F22626056A007FD256 /* CurrentTimeView.swift in Sources */,
 				93A01BAC2627482A00157933 /* MarkView.swift in Sources */,
+				9306F3492633CD0F002A6514 /* SliderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,6 +735,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9306F3862633FA35002A6514 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9306F3782633FA32002A6514 /* StariosWidgetExtension */;
+			targetProxy = 9306F3852633FA35002A6514 /* PBXContainerItemProxy */;
+		};
 		9370919426247D8400134EC4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9370918126247D8400134EC4 /* Starios (iOS) */;
@@ -634,6 +753,53 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		9306F3892633FA35002A6514 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q3926B75A9;
+				INFOPLIST_FILE = StariosWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.italkso.Starios.StariosWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9306F38A2633FA35002A6514 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q3926B75A9;
+				INFOPLIST_FILE = StariosWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.italkso.Starios.StariosWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		937091AA26247D8400134EC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -748,6 +914,7 @@
 		937091AD26247D8400134EC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -770,6 +937,7 @@
 		937091AE26247D8400134EC4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -932,6 +1100,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9306F3882633FA35002A6514 /* Build configuration list for PBXNativeTarget "StariosWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9306F3892633FA35002A6514 /* Debug */,
+				9306F38A2633FA35002A6514 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9370917926247D8200134EC4 /* Build configuration list for PBXProject "Starios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -16,7 +16,7 @@ struct Me: View {
     let name = "Ernst Mach"
     let id = "0000000001"
     let bio = "Keep it simple and stupid"
-    let rule = [GridItem(.adaptive(minimum: 220))]
+    let rule = [GridItem(.adaptive(minimum: 200))]
 
     var body: some View {
         NavigationView {
@@ -66,8 +66,8 @@ struct Me: View {
 
                         // MARK: - ScrollView
 
-                        LazyVGrid(columns: rule, spacing: 20) {
-                            ScrollView(.horizontal, showsIndicators: true) {
+                        LazyHGrid(rows: rule, spacing: 10) {
+                            ScrollView(.horizontal, showsIndicators: false) {
                                 HStack {
                                     // Use custom modifier
                                     Text("One")
@@ -80,7 +80,7 @@ struct Me: View {
                                         .collectionsModifirer()
                                 }
                             }
-                        }
+                        }.padding()
 
                         Text("Scroll these cards")
                             .font(.footnote)

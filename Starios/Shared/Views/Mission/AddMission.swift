@@ -14,6 +14,7 @@ struct AddMission: View {
         @State var titleInput = ""
         @State var contentInput = ""
         @Binding var isMarked: Bool
+    
         
          var body: some View {
             VStack(alignment:.center,spacing:20) {
