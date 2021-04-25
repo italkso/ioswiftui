@@ -17,7 +17,7 @@ struct RoundedButton: View {
             Text(text)
             Image(systemName: image)
         }
-        .font(.headline)
+        .font(.footnote)
         .padding(10)
         .foregroundColor(.white)
         .background(Color.accentColor)

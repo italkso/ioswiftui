@@ -15,7 +15,7 @@ struct Me: View {
 
     // ImagePicker
     @State var imageData: Data = .init(capacity: 0)
-    @State var showSheetForImagePicker = false
+    @State var showImagePicker = false
     @State var imagePicker = false
     @State var source: UIImagePickerController.SourceType = .camera
 
@@ -97,7 +97,7 @@ struct Me: View {
                                         }
 
                                         Button(action: {
-                                            self.showSheetForImagePicker.toggle()
+                                            self.showImagePicker.toggle()
                                         }) {
                                             Image(systemName: "camera")
                                                 .foregroundColor(.white)
@@ -106,6 +106,22 @@ struct Me: View {
                                                 .background(Color.accentColor.opacity(0.3))
                                                 .clipShape(Circle())
                                                 .offset(x: 40, y: 30)
+                                        }.actionSheet(isPresented: $showImagePicker) {
+                                            ActionSheet(
+                                                title: Text("Select"),
+                                                message: Text("Select a photo as your avatar"),
+                                                buttons: [
+                                                    .default(Text("Photo Library"), action: {
+                                                        self.source = .photoLibrary
+                                                        self.imagePicker.toggle()
+                                                    }),
+                                                    .destructive(Text("Camera"), action: {
+                                                        self.source = .camera
+                                                        self.imagePicker.toggle()
+                                                    }),
+                                                    .cancel(Text("Cancel"))
+                                                ]
+                                            )
                                         }
                                     }
                                 }
@@ -168,23 +184,6 @@ struct Me: View {
                 }
             )
             .sheet(isPresented: $showSheet) { SettingView() }
-            .actionSheet(isPresented: $showSheetForImagePicker) {
-                ActionSheet(
-                    title: Text("Select"),
-                    message: Text(""),
-                    buttons: [
-                        .default(Text("Photo Library"), action: {
-                            self.source = .photoLibrary
-                            self.imagePicker.toggle()
-                        }),
-                        .destructive(Text("Camera"), action: {
-                            self.source = .camera
-                            self.imagePicker.toggle()
-                        }),
-                        .cancel(Text("Cancel")),
-                    ]
-                )
-            }
         }
     }
 }

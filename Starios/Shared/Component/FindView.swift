@@ -9,14 +9,14 @@ import SwiftUI
 
 struct FindView: View {
     @Environment(\.managedObjectContext) var context
-    
+
     @Binding var title: String
     @State private var isSearching = false
-    
+
     var body: some View {
-        VStack{
-            HStack{
-                TextField("Search",text: $title)
+        VStack {
+            HStack {
+                TextField("Search", text: $title)
                     .font(.headline)
                     .padding()
                     .padding(.horizontal, 20)
@@ -24,10 +24,10 @@ struct FindView: View {
                         HStack {
                             Image(systemName: "magnifyingglass")
                                 .imageScale(.medium)
-                                .foregroundColor(isSearching ?  .blue : .orange)
-                                .frame(minWidth: 0 , maxWidth: .infinity, alignment: .leading)
-                                .padding(.horizontal,10)
-                     
+                                .foregroundColor(isSearching ? .blue : .orange)
+                                .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                                .padding(.horizontal, 10)
+
                             if isSearching {
                                 Button(action: {
                                     self.title = ""
@@ -41,25 +41,24 @@ struct FindView: View {
                         }
                     )
                     .overlay(
-                        Capsule().stroke(Color( self.isSearching ? .orange : .gray))
+                        Capsule().stroke(Color(self.isSearching ? .orange : .blue))
                     )
                     .onTapGesture {
                         self.isSearching = true
                     }
-                
+
                 if isSearching {
                     Button(action: {
                         self.isSearching = false
                         self.title = ""
-                        
+
                         // Hide Keyboard
                         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-                    }){
+                    }) {
                         Text("Cancel")
                             .font(.subheadline)
                             .foregroundColor(.accentColor)
-                            .padding(.trailing,10)
-                        
+                            .padding(.trailing, 10)
                     }
                     .transition(.move(edge: .trailing))
                     .animation(.easeInOut(duration: 0.08))

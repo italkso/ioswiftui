@@ -80,6 +80,8 @@
 		93E924D92626016A007FD256 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E924D72626016A007FD256 /* ImagePickerView.swift */; };
 		93E924F12626056A007FD256 /* CurrentTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E924F02626056A007FD256 /* CurrentTimeView.swift */; };
 		93E924F22626056A007FD256 /* CurrentTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E924F02626056A007FD256 /* CurrentTimeView.swift */; };
+		93F404D826356F6400FFDE5D /* TempView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F404D726356F6400FFDE5D /* TempView.swift */; };
+		93F404D926356F6400FFDE5D /* TempView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F404D726356F6400FFDE5D /* TempView.swift */; };
 		93F5367B262DB06200A63868 /* BetterSafariView in Frameworks */ = {isa = PBXBuildFile; productRef = 93F5367A262DB06200A63868 /* BetterSafariView */; };
 		93F53681262DB12000A63868 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F53680262DB12000A63868 /* RoundedButton.swift */; };
 		93F53682262DB12000A63868 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F53680262DB12000A63868 /* RoundedButton.swift */; };
@@ -180,6 +182,7 @@
 		93E924D02626010A007FD256 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		93E924D72626016A007FD256 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		93E924F02626056A007FD256 /* CurrentTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTimeView.swift; sourceTree = "<group>"; };
+		93F404D726356F6400FFDE5D /* TempView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempView.swift; sourceTree = "<group>"; };
 		93F53680262DB12000A63868 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		93F53687262DB76D00A63868 /* VisitNASAInApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitNASAInApp.swift; sourceTree = "<group>"; };
 		93F53723262FCAE100A63868 /* MissionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionData.swift; sourceTree = "<group>"; };
@@ -254,6 +257,7 @@
 				931991FC2629DA4100030FDD /* TestView.swift */,
 				931992A5262C13CE00030FDD /* SuperView.swift */,
 				9319929E262C13C100030FDD /* SubView.swift */,
+				93F404D726356F6400FFDE5D /* TempView.swift */,
 			);
 			path = MyTest;
 			sourceTree = "<group>";
@@ -661,6 +665,7 @@
 				937091BD26249EFF00134EC4 /* Location.swift in Sources */,
 				93E924D12626010B007FD256 /* ImagePicker.swift in Sources */,
 				93265616263025F00050C9A3 /* Profile.swift in Sources */,
+				93F404D826356F6400FFDE5D /* TempView.swift in Sources */,
 				937091E72625276000134EC4 /* MeView.swift in Sources */,
 				937091E026251CBC00134EC4 /* SignInView.swift in Sources */,
 				937091A426247D8400134EC4 /* StariosApp.swift in Sources */,
@@ -684,6 +689,7 @@
 				93779B1F2626D05600F317C3 /* Weather.swift in Sources */,
 				93199209262BFF8B00030FDD /* AddMission.swift in Sources */,
 				9356599C26283673003F156F /* EarthView.swift in Sources */,
+				93F404D926356F6400FFDE5D /* TempView.swift in Sources */,
 				93779B182626CEAB00F317C3 /* MapView.swift in Sources */,
 				937091C526249F8400134EC4 /* Wiki.swift in Sources */,
 				93779B462626D24900F317C3 /* CityWeatherInfo.swift in Sources */,

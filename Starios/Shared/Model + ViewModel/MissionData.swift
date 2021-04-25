@@ -5,13 +5,15 @@
 //  Created by aaron on 2021/4/21.
 //
 
-import Foundation
+// Import SwiftUI or UIKit instead of Foundation when you need use UIImage.
+import SwiftUI
 
 // Model
 struct MarsMission: Identifiable, Codable {
     var id: UUID
     var title: String
     var content: String
+    var imageURLAppendix: String?
 }
 
 // ViewModel
@@ -42,5 +44,18 @@ class MissionData: ObservableObject {
             try? data?.write(to: self.missionsURL)
         }
     }//save with GCD
+    
+    func getImages(_ imageURLAppendix: String) -> UIImage {
+        let url = MissionData.sandboxURL.appendingPathComponent(imageURLAppendix)
+        let imageData = try! Data(contentsOf: url)
+        return UIImage(data: imageData, scale: 0.5)!
+    }// Get Image
+    
+    func saveImages(id: UUID, data: Data) {
+        DispatchQueue.global(qos: .userInitiated).async {
+            let url = MissionData.sandboxURL.appendingPathComponent("\(id).png")
+            try? data.write(to: url)
+        }
+    }// Save Images with GCD
 }
 
