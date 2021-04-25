@@ -10,43 +10,39 @@ import SwiftUI
 struct ImagePickerView: View {
     
         @State var imageData: Data = .init(capacity: 0)
-        @State var showSheet = false
+        @State var showSheetForImagePicker = false
         @State var imagePicker = false
         @State var source: UIImagePickerController.SourceType = .camera
         
         var body: some View {
             NavigationView{
                 ZStack{
-                    LinearGradient(gradient: Gradient(colors: [.black,.orange]),
-                                   startPoint: .topLeading,
-                                   endPoint: .bottomTrailing
-                    ).edgesIgnoringSafeArea(.all).opacity(0.2)
                     
                     NavigationLink(destination: ImagePicker(showImagePicker: $imagePicker, image: $imageData, source: source), isActive: $imagePicker) {
                         Text("me")
                     }
-                    VStack{
+                    VStack {
                         if imageData.count != 0 {
                                 Image(uiImage: UIImage(data: self.imageData)!)
                                     .resizable()
                                     .scaledToFill()
                                     .clipShape(Circle())
-                                    .frame(width: 200, height: 200)
                                     .overlay(Circle().stroke(Color.orange, lineWidth: 3))
                                     .foregroundColor(.secondary)
                         } else {
                             Image(systemName: "person.fill")
                                 .resizable()
-                                .scaledToFit()
-                                .padding(5)
+                                .scaledToFill()
                                 .clipShape(Circle())
-                                .frame(width: 100, height: 100)
-                                .overlay(Circle().stroke(Color.gray, lineWidth: 1.5))
-                                .foregroundColor(.primary)
+                                .overlay(
+                                    Circle()
+                                    .stroke(Color.orange)
+                                )
+                                .shadow(color: .red, radius: 10, x: 0.0, y: 0.0)
                         }
                         
                         Button(action: {
-                            self.showSheet.toggle()
+                            self.showSheetForImagePicker.toggle()
                         }){
                             Text("Edit")
                                 .foregroundColor(.white)
@@ -57,7 +53,7 @@ struct ImagePickerView: View {
                         }
                     }
                     .navigationBarHidden(true)
-                    .actionSheet(isPresented: $showSheet) {
+                    .actionSheet(isPresented: $showSheetForImagePicker) {
                         ActionSheet(
                             title: Text("Select"),
                             message:  Text(""),

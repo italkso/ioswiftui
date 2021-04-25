@@ -12,29 +12,35 @@ struct AddMission: View {
         
         @StateObject var missionData = MissionData()
         @State var titleInput = ""
-        @State var contentInput = ""
+        @State var contentInput = "Write something..."
         @Binding var isMarked: Bool
     
         
          var body: some View {
             VStack(alignment:.center,spacing:20) {
-                HStack(alignment: .center, spacing: 20) {
+                HStack(alignment: .center, spacing: 10) {
                     TextField("Mission", text: $titleInput)
                         .font(.title)
-                        .foregroundColor(.accentColor)
+                        .padding()
+                        .foregroundColor(.primary)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .shadow(color: .accentColor, radius: 15, x: 0.0, y: 0.0)
                 }
                 
-                Divider()
                 TextEditor(text: $contentInput)
                     .font(.body)
+                    .padding(.horizontal)
                     .foregroundColor(.secondary)
+                    .border(Color.accentColor, width: 1.5)
+                    .padding(.horizontal)
+                
                     
                 
                 HStack {
                     Button(action: {
                         self.presentationMode.wrappedValue.dismiss()
                     }) {
-                        RoundedButton(text: "Cancle", image: "")
+                        RoundedButton(text: "Cancle", image: "xmark.seal.fill")
                     }// Cancle Button
                     
                     if titleInput != "" && contentInput != "" {
@@ -46,20 +52,14 @@ struct AddMission: View {
                             missionData.missions.append(newMission)
                             missionData.saveMissions()
                             titleInput = ""
-                            contentInput = ""
+                            contentInput = "Write something..."
                             
                             self.presentationMode.wrappedValue.dismiss()
                         }) {
-                            RoundedButton(text: "Save", image: "")
-                        }// Save Button
-                    } else {
-                        Button(action: {
+                            RoundedButton(text: "Save", image: "checkmark.seal.fill")
                             
-                        }) {
-                            RoundedButton(text: "Save", image: "")
-                        }
+                        }// Save Button
                     }
-                    
                 }
             }.padding()
          }
